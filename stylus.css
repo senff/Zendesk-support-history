@@ -1,3 +1,7 @@
+tr.status-Closed.type-Kayako_History td a,
+tr.status-Closed.type-Kayako_History td span,
+tr.status-Solved.type-Kayako_History td a,
+tr.status-Solved.type-Kayako_History td span,
 tr.status-Closed.type-Zendesk_History td a,
 tr.status-Closed.type-Zendesk_History td span,
 tr.status-Solved.type-Zendesk_History td a,
@@ -7,6 +11,7 @@ tr.status-Solved.type-Zendesk_History td span {
     font-style: italic;
 }
 
+
 tr.status-Pending.type-Zendesk_History .subject a::before,
 tr.status-New.type-Zendesk_History .subject a::before,
 tr.status-Open.type-Zendesk_History .subject a::before,
@@ -14,11 +19,13 @@ tr.status-Hold.type-Zendesk_History .subject a::before {
     font-weight: bold;
 }
 
+tr.status-Solved.type-Kayako_History .subject a::before,
 tr.status-Solved.type-Zendesk_History .subject a::before {
     content:"SOLVED: ";
 }
 
-tr.status-Closed.type-Zendesk_History .subject a::before {
+tr.status-Closed.type-Kayako_History .subject a::before,
+tr.status-Closed.type-Zendesk_History .subject a::before{
     content:"CLOSED: ";
 }
 
@@ -41,6 +48,7 @@ tr.status-Hold.type-Zendesk_History .subject a::before {
 tr.type-Zendesk_History.status-Solved td,
 tr.type-Zendesk_History.status-Open td,
 tr.type-Zendesk_History.status-Pending td,
+tr.type-Kayako_History.status-Closed td,
 tr.type-Zendesk_History.status-Closed td,
 tr.type-Zendesk_History.status-New td,
 tr.type-Zendesk_History.status-Hold td{
@@ -51,6 +59,7 @@ tr.type-Zendesk_History.status-Hold td{
 tr.type-Zendesk_History.status-Solved td a,
 tr.type-Zendesk_History.status-Open td a,
 tr.type-Zendesk_History.status-Pending td a,
+tr.type-Kayako_History.status-Closed td a,
 tr.type-Zendesk_History.status-Closed td a,
 tr.type-Zendesk_History.status-New td a,
 tr.type-Zendesk_History.status-Hold td a {
@@ -72,6 +81,9 @@ tr.type-Zendesk_History.status-Hold td.subject::before{
     width: 20px;
     height: 20px;
 }
+
+
+
 
 tr.type-Happychat td,
 tr.type-Happychat td a {
@@ -104,3 +116,4 @@ tr.type-Community_Forums_History td.subject::before {
     width: 20px;
     height: 20px;
 }
+
